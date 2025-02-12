@@ -1,6 +1,4 @@
-import 'dart:io';
 import 'package:dio/dio.dart';
-import 'package:dio/io.dart';
 import 'package:guia_de_moteis_go_replica/core/errors/exceptions.dart';
 import 'package:guia_de_moteis_go_replica/core/utils/typedef.dart';
 

@@ -3,7 +3,7 @@ import 'package:guia_de_moteis_go_replica/data/models/suite_model.dart';
 import 'package:guia_de_moteis_go_replica/domain/entities/motel_entity.dart';
 
 class MotelModel extends MotelEntity {
-  MotelModel({
+  const MotelModel({
     required super.fantasia,
     required super.logo,
     required super.bairro,
