@@ -54,16 +54,6 @@ Os dados dos motéis foram obtidos a partir dos seguintes endpoints:
 │   ├── repositories
 │   │   └── motel_repository_impl.dart
 │   └── services
-├── domain
-│   ├── entities
-│   │   ├── categoria_item_entity.dart
-│   │   ├── desconto_entity.dart
-│   │   ├── item_entity.dart
-│   │   ├── motel_entity.dart
-│   │   ├── periodo_entity.dart
-│   │   └── suite_entity.dart
-│   ├── repositories
-│   └── usecases
 ├── presentation
 │   ├── cubit
 │   │   ├── motel_cubit.dart
@@ -74,6 +64,25 @@ Os dados dos motéis foram obtidos a partir dos seguintes endpoints:
 │       ├── motel_card.dart
 │       └── suite_card.dart
 └── main.dart
+
+/test
+├── cubit
+│   ├── motel_cubit_test.dart
+├── data
+│   ├── datasources
+│   │   └── motel_remote_data_source_test.dart
+│   ├── models
+│   │   ├── categoria_item_model_test.dart
+│   │   ├── desconto_model_test.dart
+│   │   ├── item_model_test.dart
+│   │   ├── motel_model_test.dart
+│   │   ├── periodo_model_test.dart
+│   │   └── suite_model_test.dart
+│   ├── repositories
+│   │   └── motel_repository_impl_test.dart
+└── presentation
+    ├── views
+    │   └── motel_list_view_test.dart
 ```
 
 ## 🛠 Como Executar o Projeto
@@ -105,19 +114,14 @@ Para rodar os testes unitários:
 flutter test
 ```
 
-## 📌 Critérios de Avaliação
-
-✅ **Código limpo e organizado**\
-✅ **Uso correto do Flutter e boas práticas**\
-✅ **Gerenciamento de estado eficiente**\
-✅ **Testes unitários cobrindo os componentes principais**\
-✅ **Boa experiência do usuário**
-
 ## 📜 Licença
 
 Este projeto é de uso exclusivo para fins de avaliação.
 
 ---
 
-**Desenvolvido por **[**João Vitor Pires Dias**](https://github.com/joaovitorpd)**.** 🚀
+**Desenvolvido por **[**João Vitor Pires Dias**](https://github.com/joaovitorpd)**.**
 
+## 📊 Cobertura de Testes
+
+![Cobertura de Testes](coverage/coverage.png)
