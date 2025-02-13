@@ -121,10 +121,10 @@ flutter test
 
 Este projeto é de uso exclusivo para fins de avaliação.
 
----
-
-**Desenvolvido por **[**João Vitor Pires Dias**](https://github.com/joaovitorpd)**.**
 
 ## 📊 Cobertura de Testes
 
 ![Cobertura de Testes](coverage/coverage.png)
+
+---
+**Desenvolvido por **[**João Vitor Pires Dias**](https://github.com/joaovitorpd)**.**
