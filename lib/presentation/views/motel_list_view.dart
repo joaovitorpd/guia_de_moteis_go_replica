@@ -12,7 +12,7 @@ class MotelListView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Moteis Disponíveis'),
         centerTitle: true,
-        backgroundColor: Colors.red,
+        backgroundColor: Color.fromARGB(255, 186, 19, 23),
       ),
       body: Container(
         color: Colors.grey[350],
