@@ -1,7 +1,7 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guia_de_moteis_go_replica/domain/entities/motel_entity.dart';
 import 'package:guia_de_moteis_go_replica/domain/repositories/motel_repository.dart';
-
 part 'motel_state.dart';
 
 class MotelCubit extends Cubit<MotelState> {

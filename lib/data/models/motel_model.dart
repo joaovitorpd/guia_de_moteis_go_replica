@@ -12,12 +12,10 @@ class MotelModel extends MotelEntity {
     required super.suites,
     required super.qtdAvaliacoes,
     required super.media,
-    required super.id,
   });
 
   factory MotelModel.fromJson(DataMap json) {
     return MotelModel(
-      id: json['id'] as int? ?? 0,
       fantasia: json['fantasia'] as String? ?? '',
       logo: json['logo'] as String? ?? '',
       bairro: json['bairro'] as String? ?? '',

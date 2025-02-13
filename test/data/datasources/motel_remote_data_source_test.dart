@@ -19,7 +19,7 @@ void main() {
   group('getMoteis', () {
     final tDataMap = {'key': 'value'} as DataMap;
 
-    test('should return DataMap when the response code is 200 (success)',
+    test('deve retornar DataMap quando o código de resposta for 200 (sucesso)',
         () async {
       // arrange
       when(() => mockDio.get(any())).thenAnswer((_) async => Response(
@@ -33,7 +33,7 @@ void main() {
       expect(result, tDataMap);
     });
 
-    test('should throw ApiException when DioException is thrown', () async {
+    test('deve lançar ApiException quando DioException for lançada', () async {
       // arrange
       when(() => mockDio.get(any())).thenThrow(DioException(
         requestOptions: RequestOptions(path: ''),

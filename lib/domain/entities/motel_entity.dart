@@ -11,7 +11,6 @@ class MotelEntity extends Equatable {
     required this.suites,
     required this.qtdAvaliacoes,
     required this.media,
-    required int id,
   });
 
   final String fantasia;

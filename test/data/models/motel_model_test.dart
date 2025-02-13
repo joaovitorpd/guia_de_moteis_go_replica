@@ -32,7 +32,7 @@ void main() {
       motelModel = MotelModel.fromJson(json);
     });
 
-    test('should create a valid MotelModel from JSON', () {
+    test('deve criar um MotelModel válido a partir do JSON', () {
       expect(motelModel.fantasia, 'Motel Teste');
       expect(motelModel.logo, 'logo.png');
       expect(motelModel.bairro, 'Centro');
@@ -44,7 +44,7 @@ void main() {
       expect(motelModel.media, 4.5);
     });
 
-    test('should handle null values in JSON', () {
+    test('deve lidar com valores nulos no JSON', () {
       json = {
         'fantasia': null,
         'logo': null,

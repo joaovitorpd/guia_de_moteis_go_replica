@@ -32,7 +32,6 @@ void main() {
           suites: [],
           qtdAvaliacoes: 5,
           media: 4.5,
-          id: 1,
         ),
         MotelModel(
           fantasia: 'Motel 2',
@@ -43,7 +42,6 @@ void main() {
           suites: [],
           qtdAvaliacoes: 10,
           media: 4.0,
-          id: 2,
         ),
       ];
       final mockDataMap = {
