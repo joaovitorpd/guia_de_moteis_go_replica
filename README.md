@@ -64,7 +64,10 @@ O endpoint abaixo, fornecido, está com um problema de certificado, não foi pos
 │   ├── views
 │   │   └── motel_list_view.dart
 │   └── widgets
+│       ├── image_card.dart
+│       ├── items_card.dart
 │       ├── motel_card.dart
+│       ├── period_card.dart
 │       └── suite_card.dart
 └── main.dart
 
@@ -84,8 +87,8 @@ O endpoint abaixo, fornecido, está com um problema de certificado, não foi pos
 │   ├── repositories
 │   │   └── motel_repository_impl_test.dart
 └── presentation
-    ├── views
-    │   └── motel_list_view_test.dart
+    └── cubit
+        └── motel_cubit_test.dart
 ```
 
 ## 🛠 Como Executar o Projeto
