@@ -18,8 +18,7 @@ Os dados dos motéis foram obtidos a partir do seguinte endpoint:
 
 - [https://www.npoint.io/docs/e728bb91e0cd56cc0711](https://www.npoint.io/docs/e728bb91e0cd56cc0711)
 
-O endpoint abaixo, fornecido, está com um problema de certificado e não foi possível utilizar e deve ter
-o certificado atualizado:
+O endpoint abaixo, fornecido, está com um problema de certificado, não foi possível utilizar. O certificado deve ser atualizado:
 
 - [https://jsonkeeper.com/b/1IXK](https://jsonkeeper.com/b/1IXK)
 
