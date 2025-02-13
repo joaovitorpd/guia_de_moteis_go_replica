@@ -10,11 +10,14 @@ class MotelCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Colors.transparent,
       margin: const EdgeInsets.all(8.0),
+      elevation: 0, // Add this line to remove the shadow
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min, // Make the card adapt to its content
           children: [
             Text(
               _motel.fantasia,
@@ -28,9 +31,9 @@ class MotelCard extends StatelessWidget {
               _motel.bairro,
               style: const TextStyle(fontSize: 16),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 8),
             SizedBox(
-              height: 450, // Altura do slider de suítes
+              height: 600, // Altura do slider de suítes
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: _motel.suites.length,
