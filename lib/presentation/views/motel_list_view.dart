@@ -10,7 +10,10 @@ class MotelListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Moteis Disponíveis'),
+        title: const Text(
+          'Moteis Disponíveis',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 186, 19, 23),
       ),
