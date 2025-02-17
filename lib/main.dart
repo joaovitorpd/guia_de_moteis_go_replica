@@ -13,6 +13,7 @@ void main() {
 
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: BlocProvider(
         create: (context) => MotelCubit(repository)..fetchMoteis(),
         child: const MotelListView(),
