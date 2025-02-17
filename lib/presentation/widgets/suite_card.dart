@@ -12,19 +12,16 @@ class SuiteCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.width * 0.9,
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 0.3),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ImageCard(suite: suite),
-            const SizedBox(height: 0.3),
-            ItemsCard(suite: suite),
-            const SizedBox(height: 0.3),
-            PeriodCard(suite: suite),
-          ],
-        ),
+      width: MediaQuery.of(context).size.width,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ImageCard(suite: suite),
+          const SizedBox(height: 0.3),
+          ItemsCard(suite: suite),
+          const SizedBox(height: 0.3),
+          PeriodCard(suite: suite),
+        ],
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:dio/dio.dart';
 import 'package:guia_de_moteis_go_replica/data/datasources/motel_remote_data_source.dart';
@@ -7,6 +8,11 @@ import 'package:guia_de_moteis_go_replica/presentation/cubit/motel_cubit.dart';
 import 'package:guia_de_moteis_go_replica/presentation/views/motel_list_view.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
+
   final dio = Dio();
   final remoteDataSource = MotelRemoteDataSource(dio);
   final repository = MotelRepositoryImpl(remoteDataSource);

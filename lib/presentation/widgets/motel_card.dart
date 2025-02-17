@@ -13,28 +13,33 @@ class MotelCard extends StatelessWidget {
     return Card(
       color: Colors.transparent,
       margin: const EdgeInsets.all(8.0),
-      elevation: 0, // Add this line to remove the shadow
+      elevation: 0, // Adicione esta linha para remover a sombra
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min, // Make the card adapt to its content
+          mainAxisSize:
+              MainAxisSize.min, // Faça o cartão se adaptar ao seu conteúdo
           children: [
-            Text(
-              _motel.fantasia,
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+            Padding(
+              padding: EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 8.0),
+              child: Text(
+                _motel.fantasia,
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
-            const SizedBox(height: 8),
-            Text(
-              _motel.bairro,
-              style: const TextStyle(fontSize: 16),
+            Padding(
+              padding: EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 8.0),
+              child: Text(
+                _motel.bairro,
+                style: const TextStyle(fontSize: 16),
+              ),
             ),
-            const SizedBox(height: 8),
             SizedBox(
-              height: 600, // Altura do slider de suítes
+              height: 700, // Altura do slider de suítes
               child: PreloadPageView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: _motel.suites.length,

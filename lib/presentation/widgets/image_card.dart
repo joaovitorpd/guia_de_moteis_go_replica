@@ -41,11 +41,23 @@ class ImageCard extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 8),
-                Text(
-                  'Quantidade: ${suite.qtd}',
-                  style: const TextStyle(fontSize: 14),
-                  textAlign: TextAlign.center,
-                ),
+                if (suite.qtd < 3)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Icon(
+                        Icons.notifications_active,
+                        size: 14,
+                        color: Colors.red,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        'só mais ${suite.qtd} pelo app',
+                        style: const TextStyle(fontSize: 14, color: Colors.red),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
               ],
             ),
           ),
