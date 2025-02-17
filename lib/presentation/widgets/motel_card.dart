@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:guia_de_moteis_go_replica/domain/entities/motel_entity.dart';
 import 'package:guia_de_moteis_go_replica/presentation/widgets/suite_card.dart';
+import 'package:preload_page_view/preload_page_view.dart';
 
 class MotelCard extends StatelessWidget {
   final MotelEntity _motel;
@@ -34,7 +35,7 @@ class MotelCard extends StatelessWidget {
             const SizedBox(height: 8),
             SizedBox(
               height: 600, // Altura do slider de suítes
-              child: ListView.builder(
+              child: PreloadPageView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: _motel.suites.length,
                 itemBuilder: (context, index) {
