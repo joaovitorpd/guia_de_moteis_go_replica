@@ -4,6 +4,9 @@
 
 Este projeto é um **teste para Desenvolvedor Mobile (Flutter)** no segmento de motéis. O objetivo é criar uma **réplica da tela de listagem de motéis** (apenas a aba "Ir Agora") do aplicativo Guia de Motéis GO, consumindo uma API mock para exibir os dados.
 
+## Demonstração do aplicativo:
+![Demonstração do Aplicativo](media/guia_moteis_replica.gif)
+
 ## 🚀 Tecnologias Utilizadas
 
 - **Flutter** e **Dart**
@@ -120,14 +123,13 @@ Para rodar os testes unitários:
 flutter test
 ```
 
-## 📜 Licença
-
-Este projeto é de uso exclusivo para fins de avaliação.
-
-
 ## 📊 Cobertura de Testes
 
 ![Cobertura de Testes](coverage/coverage.png)
+
+## 📜 Licença
+
+Este projeto é de uso exclusivo para fins de avaliação.
 
 ---
 **Desenvolvido por **[**João Vitor Pires Dias**](https://github.com/joaovitorpd)**.**
