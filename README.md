@@ -5,7 +5,11 @@
 Este projeto é um **teste para Desenvolvedor Mobile (Flutter)** no segmento de motéis. O objetivo é criar uma **réplica da tela de listagem de motéis** (apenas a aba "Ir Agora") do aplicativo Guia de Motéis GO, consumindo uma API mock para exibir os dados.
 
 ## Demonstração do aplicativo:
+
 ![Demonstração do Aplicativo](media/guia_moteis_replica.gif)
+
+**[Link](https://drive.google.com/file/d/1zRjYnvNqOuxsSGoK_Ac_DgrAWJB7O1rt/view?usp=share_link) para o video da demonstração.**
+
 
 ## 🚀 Tecnologias Utilizadas
 
